@@ -1,0 +1,150 @@
+body {
+    background-color: rgb(234, 226, 226);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#nav-bar {
+    display: flex;
+}
+
+#nav2 {
+    position: absolute;
+    width: 100%;
+    height: 5vw;
+    background-color: rgb(112, 112, 112);
+    opacity: .8;
+}
+
+#work {
+    position: absolute;
+}
+
+
+#contact {
+    position: absolute;
+}
+
+#insta {
+    position: absolute;
+}
+
+#insta-icon {
+    position: absolute;
+    width: 3%;
+    margin-left: 90%;
+    margin-top: 5%;
+}
+
+/* #insta-link {
+    position: absolute;
+    z-index: 6;
+} */
+
+header h2 {
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+/* #work-text {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 69.3%;
+    transform: rotate(-55deg);
+    color: rgb(78, 78, 78);
+    font-size: 1.4vw;
+} */
+
+#work-text2 {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 69.3%;
+   
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+}
+
+/* #contact-text {
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 76%;
+    transform: rotate(-55deg);
+    color: rgb(78, 78, 78);
+    font-size: 1vw;
+} */
+#contact-text2 {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 76%;
+    
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+}
+
+
+/* #logo {
+    position: absolute;
+} */
+
+/* a:hover {
+    font-size: 2rem;
+} */
+
+#contact:hover {
+    left: -3%;
+    width: 100%;
+}
+
+/* header h2:hover {
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    font-size: 2vw;
+} */
+#contact-text2:hover {
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    font-size: 1.1vw;
+    margin-top: 1.95%;
+    margin-left: 75.9%;
+}
+#work-text2:hover {
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    font-size: 1.1vw;
+    margin-top: 1.95%;
+    margin-left: 69.2%;
+}
+#logo2 {
+    position: absolute;
+    margin-left: 4%;
+    margin-top: 1.3%;
+}
+svg {
+    position: absolute;
+    width: 13%;
+    margin-left: 4%;
+    margin-top: 1.1%;
+}
+
+#svg2 {
+    fill: rgb(255, 255, 255);
+}
+#svg2:hover {
+   
+    /* Similar syntax to box-shadow */
+    width: 14%;
+    margin-left: 3.5%;
+    margin-top: 1%;
+    cursor: pointer;
+  }
+svg:hover {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.7));
+    filter: drop-shadow( 0px 0px 5px rgba(255, 255, 255, 0.7));
+    width: 14%;
+    margin-left: 3.5%;
+    margin-top: .9%;
+    cursor: pointer;
+}
