@@ -87,6 +87,15 @@ header h2 {
     font-size: 1vw;
 }
 
+#about-text {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 84.7%;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 1vw;
+}
+
 
 /* #logo {
     position: absolute;
@@ -122,11 +131,18 @@ header h2 {
     margin-left: 4%;
     margin-top: 1.3%;
 }
-svg {
+#svg {
     position: absolute;
     width: 13%;
     margin-left: 4%;
     margin-top: 1.1%;
+}
+
+#svg-insta {
+    position: absolute;
+    width: 2.2%;
+    margin-top: 1.4%;
+    margin-left: 95%;
 }
 
 #svg2 {
@@ -134,7 +150,6 @@ svg {
 }
 #svg2:hover {
    
-    /* Similar syntax to box-shadow */
     width: 14%;
     margin-left: 3.5%;
     margin-top: 1%;
@@ -148,3 +163,8 @@ svg:hover {
     margin-top: .9%;
     cursor: pointer;
 }
+
+#svg-insta2 {
+    fill: rgb(255, 255, 255);
+}
+
