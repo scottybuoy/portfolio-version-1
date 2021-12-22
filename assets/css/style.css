@@ -3,6 +3,21 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
    
+   
+}
+
+#head-cont {
+    
+ 
+    position: sticky; top: 0px;
+    
+}
+
+#bg-inset {
+    height: 100%;
+    width: 100%;
+  position: absolute;
+  background-color: rgb(138, 138, 138);
 }
 
 a {
@@ -42,24 +57,14 @@ a {
     margin-top: 5%;
 }
 
-/* #insta-link {
-    position: absolute;
-    z-index: 6;
-} */
+
 
 header h2 {
     font-size: 1rem;
     font-weight: 100;
 }
 
-/* #work-text {
-    position: absolute;
-    margin-top: 6%;
-    margin-left: 69.3%;
-    transform: rotate(-55deg);
-    color: rgb(78, 78, 78);
-    font-size: 1.4vw;
-} */
+
 
 #work-text2 {
     position: absolute;
@@ -70,14 +75,6 @@ header h2 {
     font-size: 1vw;
 }
 
-/* #contact-text {
-    position: absolute;
-    margin-top: 6%;
-    margin-left: 76%;
-    transform: rotate(-55deg);
-    color: rgb(78, 78, 78);
-    font-size: 1vw;
-} */
 #contact-text2 {
     position: absolute;
     margin-top: 2%;
@@ -96,23 +93,7 @@ header h2 {
 }
 
 
-/* #logo {
-    position: absolute;
-} */
 
-/* a:hover {
-    font-size: 2rem;
-} */
-
-/* #contact:hover {
-    left: -3%;
-    width: 100%;
-} */
-
-/* header h2:hover {
-    text-shadow: 0px 0px 8px rgb(255, 255, 255);
-    font-size: 2vw;
-} */
 #contact-text2:hover {
     text-shadow: 0px 0px 8px rgb(255, 255, 255);
     font-size: 1.1vw;
@@ -197,8 +178,34 @@ main {
 
 .thumbs {
     width: 30%;
-    min-width: 200px;
-    padding: 4%;
+    min-width: 220px;
+    padding: 3%; 
+}
+
+#hov-test {
+    border-radius: 8px;
+    opacity: .5;
+}
+#hov-test:hover {
+    opacity: .9;
+
+}
+.site-name {
+    position: absolute;
+    left: 26%;
+}
+
+
+/* WORKS! */
+/* .thumbs:hover {
+    background-color: salmon;
+} */
+
+.sub-bar {
+    height: 3px;
+    width: 113%;
+    background-color: rgb(184, 184, 184);
+    margin-top: 5%;
 }
 
 aside {
@@ -218,18 +225,148 @@ aside p {
 
 #contact-container {
     display: flex;
+    margin-top: 200px;
+}
+
+#about-cont {
+    display: flex;
+    margin-top: 200px;
+}
+
+#port-cont {
+    flex: 3;
+    text-align: center;
+}
+
+#portrait {
+
+    margin: 5%;
+    border-radius: 3px;
 }
 
 
 
-/* MEDIA QUERIES */
+/* CONTACT FORM */
 
-@media (max-width: 851px) {
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  
+  .form-container {
+    border-radius: 5px;
+    padding: 0px;
+    flex: 3;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  
+  #inner-form-cont {
+    background-color:rgb(214, 214, 214);
+    border-radius: 10px;
+    width: 55%;
+    min-width: 340px;
+    text-align: center;
+  }
+
+  #fname, #lname {
+      width:65%;
+  }
+
+  #message {
+      width: 100%;
+      height: 150px;
+  }
+
+  form {
+      padding: 40px;
+  }
+
+
+
+  footer h3 {
+        color:rgb(99, 99, 99);
+        font-style: italic;
+    }
+    footer {
+    background-color: rgb(173, 173, 173);
+    padding: 3px;
+    opacity: .8;
+    text-align: center;
+    margin-top: 10%;
+    }
+
+    #bg-trans {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: .2;
+    }
+
+
+  /* MEDIA QUERIES */
+
+@media (max-width: 991px) {
+    #nav2 {
+        position: absolute;
+        width: 100%;
+        height: 7vw;
+        background-color: rgb(112, 112, 112);
+        opacity: .8;
+    }
+    svg {
+        width: 150%;
+        margin-left: 4%;
+        margin-top: 2.5%;
+    }
+    #work-text2 {
+        margin-top: 2.7%;
+        margin-left: 62.3%;
+        font-size: 13px;
+    }
+    
+    #contact-text2 {
+        margin-top: 2.7%;
+        margin-left: 72.5%;
+        font-size: 13px;
+    }
+    
+    #about-text2 {
+        margin-top: 2.7%;
+        margin-left: 84.7%;
+        font-style: italic;
+        font-size: 13px;
+    }
     main {
         align-items: flex-start;
     }
     .thumbs {
-        min-width: 120px;
+        min-width: 180px;
+        padding: 1%;
     }
     aside h1 {
         color:rgb(138, 138, 138);
@@ -240,57 +377,139 @@ aside p {
         color: rgb(75, 75, 75);
         font-size: 90%;
     }
+    #inner-form-cont {
+        background-color:rgb(214, 214, 214);
+        border-radius: 10px;
+        width: 5%;
+        min-width: 280px;
+        text-align: center;
+      }
 }
 
 
-
-@media (max-width: 500px) {
-
+@media (max-width: 767px) {
+    #nav2 {
+        position: absolute;
+        width: 100%;
+        height: 9vw;
+        background-color: rgb(112, 112, 112);
+        opacity: .8;
+    }
+    svg {
+        width: 200%;
+        margin-left: 4%;
+        margin-top: 4%;
+    }
+    #work-text2 {
+        margin-top: 3.6%;
+        margin-left: 59.3%;
+        font-size: 13px;
+    }
+    
+    #contact-text2 {
+        margin-top: 3.6%;
+        margin-left: 70.5%;
+        font-size: 13px;
+    }
+    
+    #about-text2 {
+        margin-top: 3.6%;
+        margin-left: 84.7%;
+        font-style: italic;
+        font-size: 13px;
+    }
+    main {
+        align-items: flex-start;
+    }
     .thumbs {
-        min-width: 200px;
+        min-width: 165px;
+        padding: 2%;
+    }
+    aside h1 {
+        color:rgb(138, 138, 138);
+        font-size: 140%;
+        font-style: italic;
     }
     aside p {
         color: rgb(75, 75, 75);
-        font-size: 75%;
+        font-size: 90%;
     }
+    #inner-form-cont {
+        background-color:rgb(214, 214, 214);
+        border-radius: 10px;
+        width: 5%;
+        min-width: 280px;
+        text-align: center;
+      }
 }
 
 
 
-/* CONTACT FORM */
+@media (max-width: 673px) {
+    .thumbs {
 
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .form-container {
-    width: 50px;
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    flex: 3;
-   
-  }
+        padding: 1%;
+    }
+}
+
+
+@media (max-width: 500px) {
+    #nav2 {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-color: rgb(112, 112, 112);
+        opacity: .8;
+    }
+    #work-text2, #contact-text2, #about-text2, #svg-insta {
+        display: none;
+    }
+    svg {
+        width: 350%;
+        margin-left: 4%;
+        margin-top: 35%;
+    }
+    .thumbs {
+        width: 50%;
+        min-width: 200px;
+        padding: 0;
+    }
+    aside p {
+        color: rgb(75, 75, 75);
+        font-size: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+    #main-cont {
+        /* flex-direction: column;
+        align-items: center; */
+    }
+    #contact-container {
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    aside {
+        order: -1;
+        margin-left: 3%;
+       margin-right: -1%;
+    }
+
+    aside h1 {
+        font-size: 250%;
+    }
+
+    #main-cont {
+        margin-top: 20px;
+    }
+
+    #inner-form-cont {
+        margin-top: 50px;
+    }
+    .sub-bar {
+        display: none;
+    }
+    #about-cont {
+        flex-direction: column;
+    }
+}
