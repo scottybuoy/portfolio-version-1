@@ -87,7 +87,7 @@ header h2 {
     font-size: 1vw;
 }
 
-#about-text {
+#about-text2 {
     position: absolute;
     margin-top: 2%;
     margin-left: 84.7%;
@@ -105,10 +105,10 @@ header h2 {
     font-size: 2rem;
 } */
 
-#contact:hover {
+/* #contact:hover {
     left: -3%;
     width: 100%;
-}
+} */
 
 /* header h2:hover {
     text-shadow: 0px 0px 8px rgb(255, 255, 255);
@@ -125,6 +125,12 @@ header h2 {
     font-size: 1.1vw;
     margin-top: 1.95%;
     margin-left: 69.2%;
+}
+#about-text2:hover {
+    text-shadow: 0px 0px 8px rgb(255, 255, 255);
+    font-size: 1.1vw;
+    margin-top: 1.95%;
+    margin-left: 84.6%;
 }
 #logo2 {
     position: absolute;
@@ -155,7 +161,7 @@ header h2 {
     margin-top: 1%;
     cursor: pointer;
   }
-svg:hover {
+#svg:hover {
     -webkit-filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.7));
     filter: drop-shadow( 0px 0px 5px rgba(255, 255, 255, 0.7));
     width: 14%;
@@ -168,3 +174,39 @@ svg:hover {
     fill: rgb(255, 255, 255);
 }
 
+#svg-insta:hover {
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(255, 255, 255, 0.7));
+    filter: drop-shadow( 0px 0px 5px rgba(255, 255, 255, 0.7));
+    width: 2.4%;
+    margin-left: 94.85%;
+    margin-top: 1.2%;
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#main-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex: 2;
+}
+
+.thumbs {
+    width: 30%;
+    min-width: 200px;
+    padding: 30px;
+}
+
+aside {
+    flex: 1;
+}
+
+aside h1 {
+    color:rgb(138, 138, 138);
+    font-size: 240%;
+    font-style: italic;
+}
